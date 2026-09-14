@@ -1,0 +1,17 @@
+spec_version: "0.1.0"
+name: engineering-assistant
+version: "0.1.0"
+description: A coding assistant for small engineering tasks - reading, writing, and editing code, running shell commands, and fixing bugs.
+
+model:
+  preferred: anthropic:claude-sonnet-4-5-20250929
+  constraints:
+    temperature: 0.2
+
+skills:
+  - exa-research
+  - pdf-export
+  - read-document
+
+runtime:
+  max_turns: 30
